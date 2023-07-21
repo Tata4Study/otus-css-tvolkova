@@ -2,3 +2,53 @@
     margin: 0;
     padding: 0;
 }
+
+.menu { 
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.subtitle {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.biography-skills {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    color: #0D0D0D;
+}
+
+.designer-name {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.designer-about {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.testimonials-website {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.testimonials-link {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
