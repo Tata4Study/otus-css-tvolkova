@@ -14,10 +14,36 @@
     padding: 0;
 }
 
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+header {
+    height: 135px;
+    margin: 0 auto;
+}
+
+nav {
+    max-width: 97%;
+    margin: 0 auto;
+    text-align: right; 
+    padding-top: 52px;
+}
+
 .menu { 
     font-family: Roboto;
     font-weight: 500;
     font-size: 24px;
+    margin-left: 51px;
+    list-style-type: none;
+    display: inline; 
+}
+
+.menu-link {
+    color: #000000;  
+    text-decoration: none;
 }
 
 h1, h3 {
