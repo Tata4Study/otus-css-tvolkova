@@ -46,6 +46,14 @@ nav {
     text-decoration: none;
 }
 
+.hero-section {
+    /*margin: 0 auto;*/
+    height: 630px;
+    background-image: url(../images/hero-section-picture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 h1, h3 {
     font-family: Playfair Display, serif;
     font-weight: normal;
