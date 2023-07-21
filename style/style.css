@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: local("Playfair Display Medium"),
+    local("PlayfairDisplay Medium"),
+    url(../fonts/PlayfairDisplay-Medium.woff2) format(woff2),
+    url(../fonts/PlayfairDisplay-Medium.woff) format(woff),
+    url(../fonts/PlayfairDisplay-Medium.svg) format(svg);
+    font-style: normal;
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu { 
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+h1, h3 {
+    font-family: Playfair Display, serif;
+    font-weight: normal;
+    font-size: 86px;
+   }
+
+.subtitle {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.biography-skills {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    color: #0D0D0D;
+}
+
+.designer-name {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.designer-about {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.testimonials-website {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.testimonials-link {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.biography-blockquote {
+    font-family: Bitter;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.testimonials-blockquote {
+    font-family: Bitter;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.strengths-list {
+    font-family: Bitter;
+    font-weight: 400;
+    font-size: 34px;
+}
