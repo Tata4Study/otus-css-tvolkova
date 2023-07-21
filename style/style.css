@@ -47,19 +47,39 @@ nav {
 }
 
 .hero-section {
-    /*margin: 0 auto;*/
     height: 630px;
+   /* width: 100vw;*/
+    position: relative;
     background-image: url(../images/hero-section-picture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-h1, h3 {
+.hero-wrapper {
+ width: 690px; 
+ height: 360px;  
+ background-color: #FFFFFF;
+ text-align: center;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: Playfair Display, serif;
+    font-weight: normal;
+    font-size: 86px;
+    padding-top: 110px;
+   }
+
+h3 {
     font-family: Playfair Display, serif;
     font-weight: normal;
     font-size: 86px;
    }
-
+  
+   
 .subtitle {
     font-family: Roboto;
     font-weight: 500;
