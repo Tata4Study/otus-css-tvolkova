@@ -52,3 +52,21 @@ h2 {
     font-size: 16px;
     color: #000000;
 }
+
+.biography-blockquote {
+    font-family: Bitter;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.testimonials-blockquote {
+    font-family: Bitter;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.strengths-list {
+    font-family: Bitter;
+    font-weight: 400;
+    font-size: 34px;
+}
