@@ -73,7 +73,7 @@ h1 {
     font-weight: normal;
     font-size: 86px;
     line-height: normal;
-    padding-top: 110px;
+    padding-top: 105px;
    }
 
 h3 {
@@ -82,13 +82,13 @@ h3 {
     font-size: 86px;
     line-height: 114.64px;
    }
-  
-   
+     
 .subtitle {
     font-family: Roboto;
     font-weight: 500;
     font-size: 20px;
     line-height: normal;
+    padding-top: 6px;
 }
 
 h2 {
