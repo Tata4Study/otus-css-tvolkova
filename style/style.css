@@ -36,6 +36,7 @@ nav {
     font-family: Roboto;
     font-weight: 500;
     font-size: 24px;
+    line-height: normal;
     margin-left: 51px;
     list-style-type: none;
     display: inline; 
@@ -56,20 +57,22 @@ nav {
 }
 
 .hero-wrapper {
- width: 690px; 
- height: 360px;  
- background-color: #FFFFFF;
- text-align: center;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
+    width: 690px; 
+    height: 360px;  
+    background-color: #FFFFFF;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
 h1 {
     font-family: Playfair Display, serif;
     font-weight: normal;
     font-size: 86px;
+    line-height: normal;
     padding-top: 110px;
    }
 
@@ -77,6 +80,7 @@ h3 {
     font-family: Playfair Display, serif;
     font-weight: normal;
     font-size: 86px;
+    line-height: 114.64px;
    }
   
    
@@ -84,60 +88,70 @@ h3 {
     font-family: Roboto;
     font-weight: 500;
     font-size: 20px;
+    line-height: normal;
 }
 
 h2 {
     font-family: Roboto;
     font-weight: 700;
     font-size: 24px;
+    line-height: 28.13px;
 }
 
 .biography-skills {
     font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
+    line-height: normal;
     color: #0D0D0D;
-}
-
-.designer-name {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 16px;
-}
-
-.designer-about {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.testimonials-website {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 16px;
-}
-
-.testimonials-link {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
 }
 
 .biography-blockquote {
     font-family: Bitter;
     font-weight: 400;
     font-size: 26px;
+    line-height: normal;
+}
+
+.designer-name {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.designer-about {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.testimonials-website {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.testimonials-link {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+    color: #000000;
 }
 
 .testimonials-blockquote {
     font-family: Bitter;
     font-weight: 400;
     font-size: 32px;
+    line-height: normal;
 }
 
 .strengths-list {
     font-family: Bitter;
     font-weight: 400;
     font-size: 34px;
+    line-height: normal;
 }
