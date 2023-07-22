@@ -15,13 +15,13 @@
 }
 
 body {
-    max-width: 1440px;
     margin: 0 auto;
     background-color: #FFFFFF;
 }
 
 header {
     height: 135px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -48,7 +48,7 @@ nav {
 
 .hero-section {
     height: 630px;
-   /* width: 100vw;*/
+    width: 100%;
     position: relative;
     background-image: url(../images/hero-section-picture.jpg);
     background-repeat: no-repeat;
