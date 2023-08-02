@@ -54,6 +54,7 @@ nav {
     background-image: url(../images/hero-section-picture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 150px;
 }
 
 .hero-wrapper {
@@ -97,11 +98,49 @@ h3 {
     padding-bottom: 100px;
 }
 
+.biography-section {
+  margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+   /* margin-left: 100px;*/
+   background-color: greenyellow;
+margin-bottom: 100px;
+}
+
 h2 {
     font-family: Roboto;
     font-weight: 700;
     font-size: 24px;
-    line-height: 28.13px;
+    line-height: 28.13px; 
+}
+
+.biography-section-title {
+    transform: rotate(270deg);
+   background-color: red;
+   margin-top: 45px;
+  margin-left: -15px;
+}
+
+.biography-picture {
+    order: -1;
+margin-left: 140px;
+}
+
+.biography-content {
+    padding-top: 176px; 
+    padding-left: 42px;
+}
+
+.biography-position {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    color: #0D0D0D;
+    margin-top: 37px;
 }
 
 .biography-skills {
@@ -110,6 +149,7 @@ h2 {
     font-size: 18px;
     line-height: normal;
     color: #0D0D0D;
+    margin-top: -1px;
 }
 
 .biography-blockquote {
@@ -117,6 +157,7 @@ h2 {
     font-weight: 400;
     font-size: 26px;
     line-height: normal;
+    margin-top: 58px;
 }
 
 .designer-name {
