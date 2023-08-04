@@ -54,6 +54,7 @@ nav {
     background-image: url(../images/hero-section-picture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 150px;
 }
 
 .hero-wrapper {
@@ -78,7 +79,7 @@ h1 {
     padding-left: 120px;
     padding-right: 120px;
     padding-bottom: 10px;*/
-    padding: 105px 120px 10px;
+    padding: 105px 120px 8px;
    }
 
 h3 {
@@ -97,11 +98,53 @@ h3 {
     padding-bottom: 100px;
 }
 
+.biography-section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 100px;
+    height: 840px;
+}
+
 h2 {
     font-family: Roboto;
     font-weight: 700;
     font-size: 24px;
-    line-height: 28.13px;
+    line-height: 28.13px; 
+}
+
+.biography-section-title {
+    transform: rotate(270deg);
+    margin-top: 43px;
+    margin-left: -15px;
+}
+
+.biography-img-wrapper {
+    order: -1;
+    margin-left: 140px;
+    max-width: 50%;
+}
+
+.biography-picture {
+    max-width: 100%;
+    max-height: 840px;
+}
+
+.biography-content {
+    padding-top: 176px; 
+    padding-left: 42px;
+}
+
+.biography-position {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    color: #0D0D0D;
+    margin-top: 37px;
 }
 
 .biography-skills {
@@ -110,6 +153,20 @@ h2 {
     font-size: 18px;
     line-height: normal;
     color: #0D0D0D;
+    margin-top: -1px;
+}
+
+.skills::after {
+    content: " / ";
+    color: #0D0D0D;
+}
+
+.img-rectangle::before {
+    content: "-";
+    color: #0d0d0d;
+    font-size: 5em /*80px*/;
+    line-height: 0.7; 
+    margin-left: -3px;
 }
 
 .biography-blockquote {
