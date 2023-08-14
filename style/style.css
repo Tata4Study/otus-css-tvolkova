@@ -350,7 +350,7 @@ h2 {
 }
 
 /* Верстка секции на grig - мой первоначальный вариант*/
-/*.strong-points-section {
+.strong-points-section {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
@@ -368,10 +368,10 @@ h2 {
 }
 
 .strong-points-content {
-    display: grid;
+   /* display: grid;
     grid-template-columns: 335px 335px 451px 335px 335px;
     grid-template-rows: 100%;
-    gap: 20px;
+    gap: 20px;*/
     overflow-x: scroll;
 }
 
@@ -391,10 +391,10 @@ h2 {
     line-height: 1.25;
     list-style-type: none;
     padding-left: 80px;
-}*/
+}
 
 /*Код с помощью autoprefixer CSS online*/
-.strong-points-section {
+/*.strong-points-section {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
@@ -464,4 +464,13 @@ h2 {
     line-height: 1.25;
     list-style-type: none;
     padding-left: 80px;
+}*/
+
+@supports (display: flex) {
+    .strong-points-content {
+        display: grid;
+        grid-template-columns: 335px 335px 451px 335px 335px;
+        grid-template-rows: 100%;
+        gap: 20px;
+}
 }
