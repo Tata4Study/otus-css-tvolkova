@@ -349,7 +349,6 @@ h2 {
     z-index: 10;
 }
 
-/* Верстка секции на grig - мой первоначальный вариант*/
 .strong-points-section {
     margin-left: auto;
     margin-right: auto;
@@ -368,15 +367,19 @@ h2 {
 }
 
 .strong-points-content {
-   /* display: grid;
-    grid-template-columns: 335px 335px 451px 335px 335px;
-    grid-template-rows: 100%;
-    gap: 20px;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
     overflow-x: scroll;
 }
 
 .strong-points-strengths {
-    justify-self: center;
+    align-self: flex-start;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .strong-points-strengths-title {
@@ -466,11 +469,16 @@ h2 {
     padding-left: 80px;
 }*/
 
-@supports (display: flex) {
+@supports (display: grid) {
     .strong-points-content {
         display: grid;
         grid-template-columns: 335px 335px 451px 335px 335px;
         grid-template-rows: 100%;
         gap: 20px;
-}
+        overflow-x: scroll;
+    }
+
+    .strong-points-strengths {
+        justify-self: center;
+    }
 }
