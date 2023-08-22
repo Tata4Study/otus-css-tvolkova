@@ -99,6 +99,9 @@ h3 {
 }
 
 .biography-section {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -178,6 +181,7 @@ h2 {
 
 .designers-section {
     margin: 0 auto;
+    width: 1440px;
     max-width: 100%;   
     margin-bottom: 150px; 
     height: 677px;
@@ -198,7 +202,7 @@ h2 {
     flex-wrap: nowrap;
     justify-content: start;
     align-items: end;
-    height: 91%;   
+    height: 91.5%;   
     gap: 20px;
     overflow-x: scroll;
     z-index: 20;
@@ -238,8 +242,9 @@ h2 {
 .testimonials-section {
     height: 760px;
     margin: 0 auto;
+    width: 1440px;
     max-width: 97.2%;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .testimonials-section-wrap{
@@ -349,9 +354,137 @@ h2 {
     z-index: 10;
 }
 
+.strong-points-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+.strong-points-section-wrap {
+    max-width: 98.6%;
+    margin-left: 1.4%; 
+}
+
+.strong-points-section-title {
+    height: 58px;
+    padding-left: 17%;
+}
+
+.strong-points-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.strong-points-strengths {
+    align-self: flex-start;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.strong-points-strengths-title {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
 .strengths-list {
     font-family: Bitter;
     font-weight: 400;
     font-size: 34px;
-    line-height: normal;
+    line-height: 1.25;
+    list-style-type: none;
+    padding-left: 80px;
+}
+
+/*Код с помощью autoprefixer CSS online*/
+/*.strong-points-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+.strong-points-section-wrap {
+    max-width: 98.6%;
+    margin-left: 1.4%; 
+}
+
+.strong-points-section-title {
+    height: 58px;
+    padding-left: 17%;
+}
+
+.strong-points-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 335px 20px 335px 20px 451px 20px 335px 20px 335px;
+    grid-template-columns: 335px 335px 451px 335px 335px;
+    -ms-grid-rows: 100%;
+    grid-template-rows: 100%;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.strong-points-content > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.strong-points-content > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.strong-points-content > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+
+.strong-points-content > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+}
+
+.strong-points-content > *:nth-child(5) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+}
+
+.strong-points-strengths {
+    -ms-grid-column-align: center;
+        justify-self: center;
+}
+
+.strong-points-strengths-title {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.strengths-list {
+    font-family: Bitter;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.25;
+    list-style-type: none;
+    padding-left: 80px;
+}*/
+
+@supports (display: grid) {
+    .strong-points-content {
+        display: grid;
+        grid-template-columns: 335px 335px 451px 335px 335px;
+        grid-template-rows: 100%;
+        gap: 20px;
+        overflow-x: scroll;
+    }
+
+    .strong-points-strengths {
+        justify-self: center;
+    }
 }
