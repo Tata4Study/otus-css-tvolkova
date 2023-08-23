@@ -56,20 +56,21 @@ nav {
 }
 
 .hero-section {
-    height: 630px;
+    height: 764px;
     width: 100%;
     position: relative;
     background-image: url(../images/hero-section-picture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 152px;
+    margin-bottom: 80px;
 }
 
 @media screen and (max-width: 626px) {
     .hero-section {
-        height: 764px;
+        height: 700px;
         max-width: 626px;
-        margin-bottom: 100px;
+        margin-bottom: 140px;
+        background-color: brown;
     }
     .hero-wrapper {
         max-width: 626px;
@@ -149,6 +150,21 @@ h3 {
     max-width: 100%;
 }
 
+/*@media screen and (max-width: 626px) {
+    .biography-section {
+       display: flex;
+       flex-direction: row;
+       height: 952px;
+       max-width: 626px;
+    }
+    .biography-section-title {
+        order: 2;
+    }
+    .biography-section-wrapper {
+        order: -1;
+    }
+}*/
+
 .biography-section-wrapper {
     margin-top: -30px;
     display: flex;
@@ -178,12 +194,6 @@ h2 {
     order: -1;
     margin-left: 140px;
     max-width: 50%;
-}
-
-@media screen and (max-width: 626px){
-    .biography-img-wrapper {
-        order: 10;
-    }
 }
 
 .biography-picture {
@@ -233,6 +243,140 @@ h2 {
     font-size: 26px;
     line-height: normal;
 }
+
+@media screen and (max-width: 576px) {
+    .biography-section {
+        max-width: 92%;
+  
+        margin-left: 0;
+        padding-top: 5px;
+      /*  display: flex;
+       flex-direction: row;
+       justify-content: start;
+       align-items: start;*/
+       height: 952px;
+       background-color: aqua;
+       margin-bottom: 150px;
+    }
+
+    h2 {
+        /*font-family: Roboto;
+        font-weight: 700;*/
+        font-size: 18px;
+        line-height: normal; 
+    }
+
+    .biography-section-title {
+        transform: rotate(0deg);
+        padding-right: 28px;
+        text-align: right;
+        min-width: 20%;
+        order: 2;
+        z-index: 1;
+    }
+    
+    .biography-section-wrapper {
+        margin-top: -22px;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: start;
+        background-color: aquamarine;
+      /*  margin-bottom: 150px;
+        height: 840px;*/     
+        margin-left: 0;
+        gap: 0;
+    }
+.biography-img-wrapper {
+    order: 3;
+    margin-left: 0;
+    /*max-width: 100%;*/
+}
+    .biography-content {
+        padding-top: 0; 
+        padding-left: 0;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: start;
+align-items: start;
+    }
+.biography-position {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    color: #000000;
+    margin-top: 0;
+    padding-left: 18px;
+    order: -10;
+}
+
+.biography-skills {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000000;
+      margin-top: 0;
+      padding-left: 18px;
+    order: -8;
+}
+
+.skills::before {
+ 
+    content: "- ";
+}
+.skills::after {
+    content: none;
+}
+.biography-blockquote {
+    font-family: Bitter;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: normal;
+    order: -5;
+    margin-top: 120px;
+    padding-left: 20px;
+    padding-right: 50px; /*непонятно, как перенести строки*/
+    align-self: stretch;
+}
+
+br {
+    display: none;
+}
+
+.biography-title {
+    margin-top: 88px;
+    padding-left: -px;
+    font-family: Playfair Display, serif;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 1.3;
+    margin-bottom: 35px;
+}
+
+.biography-title::before {
+    content: "-";
+    padding-left: 18px;
+}
+
+.img-rectangle::before  {
+    content: none;
+}
+
+.biography-img-wrapper {
+    max-width: 100%;
+}
+
+.biography-picture-mobile {
+   width: 100%;
+}
+
+}
+
 
 .designers-section {
     margin: 0 auto;

@@ -57,9 +57,13 @@
         <section class="biography-section" id="biography">
             <h2 class="biography-section-title">Biography</h2>
         <div class="biography-section-wrapper">
-        <div class="biography-img-wrapper"><img class="biography-picture" src="images/biography-section-picture.jpg" alt="art-director_foto"></div>
+        <div class="biography-img-wrapper">
+           <!-- <img class="biography-picture" src="images/biography-section-picture.jpg" alt="art-director_foto">-->
+            <picture>
+                <source class="biography-picture-mobile" srcset="images/biography-picture-mobile.jpg" media="(max-width: 576px)">
+                <img class="biography-picture" src="images/biography-section-picture.jpg" alt="art-director_foto"></picture></div>
             <div class="biography-content">
-                <h3>Katya<br> Mills</h3>
+                <h3 class="biography-title">Katya<br> Mills</h3>
                 <p class="biography-position">Art Director</p>
                 <p class="biography-skills">
                     <span class="skills">Scenography</span>
