@@ -247,21 +247,14 @@ h2 {
 @media screen and (max-width: 576px) {
     .biography-section {
         max-width: 92%;
-  
         margin-left: 0;
         padding-top: 5px;
-      /*  display: flex;
-       flex-direction: row;
-       justify-content: start;
-       align-items: start;*/
         height: 952px;
-       background-color: aqua;
-       margin-bottom: 150px;
+        background-color: aqua;
+        margin-bottom: 80px;
     }
 
     h2 {
-        /*font-family: Roboto;
-        font-weight: 700;*/
         font-size: 18px;
         line-height: normal; 
     }
@@ -287,6 +280,7 @@ h2 {
         margin-left: 0;
         gap: 0;
     }
+
     .biography-img-wrapper {
         order: 3;
         margin-left: 0;
@@ -325,11 +319,7 @@ h2 {
         order: -8;
     }
 
-.skills::before {
-.skills::before {
- 
     .skills::before {
- 
         content: "- ";
     }
 
@@ -378,7 +368,7 @@ h2 {
     }
 
     .biography-picture-mobile {
-    width: 100%;
+        width: 100%;
     }
 }
 
@@ -435,21 +425,53 @@ h2 {
     line-height: normal;
     text-transform: uppercase;
 }
+    
+.designer-about {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+}
 
+@media screen and (max-width: 576px) {
+    .designers-section {
+        height: 565px;
+    }
+    
+    .designers-section-title {
+        margin-left: 15px;
+        height: 52px;
+    }
+    
+    .designers-section-wrap {
+       margin-left: 16px;
+    }
+    
+    .designers-description-foto {
+        margin-bottom: 20px;
+    }
+    
+    /*добавляется при увеличенном изображении к тегу img*/
+    .description-foto-large {
+        height: 437px;
+        width: 310px;
+        z-index: 100;
+    }
+    
     /*добавляется при увеличенном изображении к тегу figcaption*/
     /*в мобильной версии сдвиг подписи вправо не нужен*/
     .description-large {
-        margin-left: 0px;
+        margin-left: 4px;
     }
-      
+    
+    .designer-name {
+        margin-left: -4px;
+    }
+        
     .designer-about {
-        font-family: Roboto;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: normal;
+        margin-left: -4px;
     }
 }
-
 
 .testimonials-section {
     height: 760px;
