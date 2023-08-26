@@ -66,18 +66,25 @@ nav {
 @media screen and (max-width: 626px) {
     header {
         height: 100px;
-        max-width: 1440px;
+        max-width: 100%;
         margin: 0 auto;
         order: 100;
         flex-grow: 1;
+        margin-bottom: 150px;
+   
+
     }
     
     nav {
-        max-width: 100%;
-        margin: 0 auto;
-        /*  text-align: justify; */
-        padding-top: 2px;
-        outline: 1px solid red;
+        margin-top: 65px;
+margin-left: 10px;
+padding-top: 5.5px;
+        background-color: red;
+display: flex;
+flex-direction: row;
+justify-content: start;
+
+
     }
     
     .menu { 
@@ -85,13 +92,14 @@ nav {
         font-weight: 400;
         font-size: 40px;
         line-height: normal;
-        margin-right: 46px;
+     /* margin-right: 0;
         /*нужно уменьшить высоту последней секции*/
+
         list-style-type: none;
         display: inline; 
-        margin-bottom: 50px;
-        outline: 1px solid blue;
-        margin-left: 36px;
+     /*   margin-bottom: 50px;*/
+      /* margin-left: 0px;*/
+     background-color: blue;
     }
     
     .menu-link {
@@ -928,5 +936,10 @@ h2 {
         list-style-type: none;
         padding-left: 0px;
         margin-left: -17px;
+    }
+
+    /*картинки только на десктопе*/
+    .strengths-img-only-desktop{
+        display: none;
     }
 }
