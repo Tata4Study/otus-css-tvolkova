@@ -74,7 +74,7 @@ nav {
         margin-top: 65px;
         order: 100;
         flex-grow: 1;
-  margin-bottom: 0;
+        margin-bottom: 0;
         border-top: 1px #000000 solid;
     }
     
@@ -587,7 +587,7 @@ h2 {
 }
 
 .testimonials-section {
-    height: 760px;
+    height: auto;
     margin: 0 auto;
     width: 1440px;
     max-width: 97.2%;
