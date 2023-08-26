@@ -19,18 +19,17 @@ body {
     background-color: #FFFFFF;
 }
 
+@media screen and (max-width: 626px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 header {
     height: 135px;
     max-width: 1440px;
     margin: 0 auto;
-}
-
-@media screen and (max-width: 626px) {
-    header {
-        max-width: 626px;
-        position: fixed;
-    bottom: 1px;
-    }
 }
 
 nav {
@@ -54,6 +53,101 @@ nav {
     color: #000000;  
     text-decoration: none;
 }
+
+.menu-list-mobile {
+    display: none;
+}
+
+/*для второго варианта меню - два списка*/
+@media screen and (max-width: 626px) {
+    header {
+        height: 100px;
+        max-width: 1440px;
+        margin: 0 auto;
+        order: 100;
+        flex-grow: 1;
+    }
+    
+    nav {
+        max-width: 100%;
+        margin: 0 auto;
+        /*  text-align: justify; */
+        padding-top: 2px;
+        outline: 1px solid red;
+    }
+    
+    .menu { 
+        font-family: Bitter;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: normal;
+        margin-right: 46px;
+        /*нужно уменьшить высоту последней секции*/
+        list-style-type: none;
+        display: inline; 
+        margin-bottom: 50px;
+        outline: 1px solid blue;
+        margin-left: 36px;
+    }
+    
+    .menu-link {
+        color: #000000;  
+        text-decoration: none;
+    }
+    
+    .menu-list {
+        display: none;
+    }
+
+    .menu-list-mobile {
+        display: inline;
+    }
+}   
+
+/*Для первого варианта меню - два в одном - скрываем буквы*/
+/*.menu-link-mobile {
+    display: none;
+}*/    
+
+/*@media screen and (max-width: 626px) {
+    /*для первого варианта меню*/
+   /* header {
+        height: auto;
+        order: 1000;
+        flex-grow: 1;
+      width: 576px;
+     }
+
+    nav {
+        width: 97%;
+        margin: 0 auto;
+      text-align: start;
+        padding-top: 0px;
+    }
+    .menu { 
+        font-family: Bitter;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: normal;
+        margin-left: 0px;
+        list-style-type: none;
+        background-color: peru;
+        width: 100%;
+        display: inline;
+    }
+
+    .menu-item{
+        display: none;
+    }
+
+    .menu-link-mobile {
+        display: inline-block;
+        font-size: 40px;
+        margin-left: 40px;
+        background-color: green;
+    }
+}*/
+
 
 .hero-section {
     height: 764px;
@@ -246,11 +340,10 @@ h2 {
 
 @media screen and (max-width: 576px) {
     .biography-section {
-        max-width: 92%;
+        max-width: 100%;
         margin-left: 0;
         padding-top: 5px;
         height: 952px;
-        background-color: aqua;
         margin-bottom: 80px;
     }
 
@@ -284,7 +377,7 @@ h2 {
     .biography-img-wrapper {
         order: 3;
         margin-left: 0;
-        max-width: 100%;
+        max-width: 100vp;
     }
 
     .biography-content {
@@ -792,7 +885,7 @@ h2 {
     
     .strong-points-section {
         max-width: 100%;
-        margin-bottom: 100px;
+        margin-bottom: 0;
     }
     
     .strong-points-section-title {
@@ -808,6 +901,7 @@ h2 {
         align-items: start;
         gap: 20px;
         overflow-x: scroll;
+        background-color: aqua;
 }
     
     .strong-points-strengths {
