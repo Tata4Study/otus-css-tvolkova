@@ -212,7 +212,7 @@ h3 {
 сверка по макету на ширине 460px, 
 при этом 10px занимает скролл*/ 
 
-@media screen and (max-width: 626px) {
+@media screen and (max-width: 576px) {
     .hero-section {
         width: 100%;
         max-width: 100%;
@@ -395,7 +395,7 @@ h2 {
     .biography-img-wrapper {
         order: 3;
         margin-left: 0;
-        max-width: 100vp;
+        max-width: 100%;
     }
 
     .biography-content {
