@@ -160,7 +160,6 @@ justify-content: start;
     }
 }*/
 
-
 .hero-section {
     height: 764px;
     width: 100%;
@@ -169,20 +168,6 @@ justify-content: start;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 80px;
-}
-
-@media screen and (max-width: 626px) {
-    .hero-section {
-        height: 700px;
-        max-width: 626px;
-        margin-bottom: 140px;
-        background-color: brown;
-    }
-    .hero-wrapper {
-        max-width: 626px;
-        position: fixed;
-        top: 1px;
-    }
 }
 
 .hero-wrapper {
@@ -194,8 +179,7 @@ justify-content: start;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*z-index: 10;*/
-    
+    /*z-index: 10;*/ 
 }
 
 h1 {
@@ -224,6 +208,48 @@ h3 {
     line-height: normal;
    /* padding-top: 8px;*/
     padding-bottom: 100px;
+}
+
+
+/*Мобильная версия - сверка по макету на ширине 460px, при этом 10px занимает скролл*/    
+
+@media screen and (max-width: 626px) {
+
+    .hero-section {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        background-color: none;
+        background-image: url(../images/hero-section-picture-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+       /* margin-bottom: 80px;*/
+    }
+
+    .hero-wrapper {
+        width: 100%;
+        background-color: #FFFFFF;
+        text-align: center;
+        position: absolute;
+        top: 160px;
+        transform: translate(-50%, -50%);
+        padding-bottom: 5px;
+    }
+
+    h1 {
+        font-size: 70px;
+        padding-top: 130px;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        padding-left: 0px;
+        padding-right: 12px;
+        padding-top: 4px;
+        padding-bottom: 0px;
+    }
 }
 
 /*.biography-section {
