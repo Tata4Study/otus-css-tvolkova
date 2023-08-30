@@ -177,8 +177,7 @@ h3 {
     .hero-wrapper {
         width: 100%;
         top: 160px;
-        padding-bottom: 5px;
-        padding: 0px 10px;
+        padding: 0px 10px ;
     }
 
     h1 {
@@ -192,33 +191,9 @@ h3 {
     }
 }
 
-/*.biography-section {
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-   /* display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: start;
-    align-items: start;
-    margin-bottom: 150px;
-    height: 840px;
-}
-
-@media screen and (max-width: 626px) {
- .biography-section {
-    display: flex;
-    flex-direction: column;
-    height: 952px;
-    max-width: 626px;
- }
-}*/
-
 .biography-section {
     width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     max-width: 100%;
 }
 
@@ -227,7 +202,7 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: start;
     margin-bottom: 150px;
     height: 840px;
@@ -249,8 +224,6 @@ h2 {
 
 .biography-img-wrapper {
     order: -1;
-   /* margin-left: 140px;*/
-  /*  max-width: 50%;*/
 }
 
 .biography-picture {
@@ -259,7 +232,6 @@ h2 {
 }
 
 .biography-content {
-  /*  padding-top: 176px; */
     align-self: center;
     padding-left: 138px;
 }
@@ -391,7 +363,6 @@ h2 {
         margin-top: 55px;
         padding-left: 17px;
         padding-right: 50px; 
-        /*непонятно, как перенести строки*/
         align-self: stretch;
     }
 
@@ -420,6 +391,7 @@ h2 {
 
     .biography-img-wrapper {
         max-width: 100%;
+        align-self: center;
     }
 
     .biography-picture-mobile {
@@ -610,9 +582,8 @@ h2 {
     grid-row: 2 / 3;
     align-self: end;
     justify-self: center;
-    margin-bottom: 12%;
-    margin-left: -10%;
-}
+    margin: 0 0 12% -10%;
+   }
 
 .testimonials-small-foto {
     max-width: 100%;
