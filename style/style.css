@@ -64,10 +64,8 @@ nav {
     display: none;
 }
 
-/*для второго варианта меню - два списка*/
 @media screen and (max-width: 576px) {
     header {
-      /*  max-height: 400px;*/
         max-width: 100%;
         margin-left: 0;
         margin-right: 0;
@@ -92,8 +90,6 @@ nav {
         font-weight: 400;
         font-size: 40px;
         line-height: normal;
-        margin-right: 50px ;
-        padding-left: 30px;
         list-style-type: none;
         display: inline; 
         margin-left: 0px;
@@ -109,53 +105,12 @@ nav {
     }
 
     .menu-list-mobile {
-        display: inline;
-    }
-}   
-
-/*Для первого варианта меню - два в одном - скрываем буквы*/
-/*.menu-link-mobile {
-    display: none;
-}*/    
-
-/*@media screen and (max-width: 626px) {
-    /*для первого варианта меню*/
-   /* header {
-        height: auto;
-        order: 1000;
-        flex-grow: 1;
-      width: 576px;
-     }
-
-    nav {
-        width: 97%;
-        margin: 0 auto;
-      text-align: start;
-        padding-top: 0px;
-    }
-    .menu { 
-        font-family: Bitter;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: normal;
-        margin-left: 0px;
-        list-style-type: none;
-        background-color: peru;
+        display: flex;
+        justify-content: space-around;
         width: 100%;
-        display: inline;
+        min-width: 350px;
     }
-
-    .menu-item{
-        display: none;
-    }
-
-    .menu-link-mobile {
-        display: inline-block;
-        font-size: 40px;
-        margin-left: 40px;
-        background-color: green;
-    }
-}*/
+}
 
 .hero-section {
     height: 764px;
@@ -176,7 +131,6 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*z-index: 10;*/ 
 }
 
 h1 {
@@ -184,10 +138,6 @@ h1 {
     font-weight: normal;
     font-size: 86px;
     line-height: normal;
-   /* padding-top: 105px;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 10px;*/
     padding: 105px 120px 8px;
    }
 
@@ -203,7 +153,6 @@ h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: normal;
-   /* padding-top: 8px;*/
     padding-bottom: 100px;
 }
 
@@ -214,35 +163,32 @@ h3 {
 
 @media screen and (max-width: 576px) {
     .hero-section {
+        margin: 0 auto;
         width: 100%;
         max-width: 100%;
         position: relative;
         background-color: #FFFFFF;        ;
         background-image: url(../images/hero-section-picture-mobile.jpg);
         background-repeat: no-repeat;
-        background-size: contain;
-        margin-bottom: 74px;
+        background-size: cover;
+        margin-bottom: 45px;
     }
 
     .hero-wrapper {
         width: 100%;
         top: 160px;
         padding-bottom: 5px;
+        padding: 0px 10px;
     }
 
     h1 {
         font-size: 70px;
-        padding-top: 130px;
-        padding-left: 0px;
-        padding-right: 10px;
+        padding: 130px 0 10px 0;
     }
 
     .subtitle {
         font-size: 18px;
-        padding-left: 0px;
-        padding-right: 12px;
-        padding-top: 4px;
-        padding-bottom: 0px;
+        padding: 4px 12px 110px 0;
     }
 }
 
@@ -360,8 +306,6 @@ h2 {
         max-width: 100%;
         margin-left: 0;
         padding-top: 5px;
-        /*height: 952px;*/
-      /*  margin-bottom: 80px;*/
     }
 
     h2 {
@@ -374,7 +318,6 @@ h2 {
         transform: rotate(0deg);
         padding-right: 28px;
         text-align: right;
-       /* min-width: 8%;*/
         order: 2;
         z-index: 1;
     }
@@ -727,7 +670,7 @@ h2 {
 
     .testimonials-list-item {
         transform: rotate(0deg);
-        margin-left: 0;
+        margin-left: 0px;
         margin-right: 0px;
     }
 
@@ -745,8 +688,7 @@ h2 {
     }
 
     .testimonials-small-foto-wrap {
-        margin-bottom: 2px;
-        margin-right: 23px;
+       margin: 0 auto 2px;
     }
 
     .testimonials-small-foto {
