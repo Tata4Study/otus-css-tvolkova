@@ -227,7 +227,7 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
     margin-bottom: 150px;
     height: 840px;
@@ -249,8 +249,8 @@ h2 {
 
 .biography-img-wrapper {
     order: -1;
-    margin-left: 140px;
-    max-width: 50%;
+   /* margin-left: 140px;*/
+  /*  max-width: 50%;*/
 }
 
 .biography-picture {
@@ -259,7 +259,8 @@ h2 {
 }
 
 .biography-content {
-    padding-top: 176px; 
+  /*  padding-top: 176px; */
+    align-self: center;
     padding-left: 138px;
 }
 
@@ -562,7 +563,7 @@ h2 {
     grid-row: 1 / span 2;
     align-self: stretch;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 33.5%);
     grid-template-columns: 100%;
 }
 
@@ -596,11 +597,12 @@ h2 {
 .testimonials-large-foto-wrap {
     grid-column: 2 / 3;
     grid-row: 1 / span 2;
+    overflow-x: hidden;
 }
 
 .testimonials-large-foto {
-    max-width: 100%;
-    max-height: 100%;
+    width: 467.73px;
+    height: 760px;
 }
 
 .testimonials-small-foto-wrap {
@@ -630,7 +632,18 @@ h2 {
     z-index: 10;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1200px) {
+    .testimonials-blockquote {
+        grid-column: 4 / 7;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30%;
+        text-align: center;
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: 700px) {
     .testimonials-section {
         width: 98%;
         margin-bottom: 32px;
