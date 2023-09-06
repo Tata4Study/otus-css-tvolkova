@@ -58,6 +58,13 @@ nav {
 .menu-link {
     color: #000000;  
     text-decoration: none;
+
+    transition: all 0.5s ease;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+    color: rgb(129, 118, 118)
 }
 
 .menu-list-mobile {
