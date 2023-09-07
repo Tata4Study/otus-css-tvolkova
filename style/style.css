@@ -603,6 +603,12 @@ h2 {
 .testimonials-large-foto {
     width: 467.73px;
     height: 760px;
+    filter: contrast(70%);
+    transition: all 0.5s ease;
+}
+
+.testimonials-large-foto:hover {
+    filter: contrast(100%);
 }
 
 .testimonials-small-foto-wrap {
