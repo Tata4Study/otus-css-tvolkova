@@ -58,6 +58,21 @@ nav {
 .menu-link {
     color: #000000;  
     text-decoration: none;
+
+    transition: all 0.5s ease;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+    color: rgb(129, 118, 118)
+}
+
+.menu-link:focus-visible {
+    outline-color: white;
+    border: 13px solid grey;
+    border-radius: 15px;
+    background-color: grey;
+    color: white;
 }
 
 .menu-list-mobile {
@@ -107,6 +122,9 @@ nav {
         justify-content: space-around;
         width: 100%;
         min-width: 350px;
+    }
+    .menu-link:focus-visible {
+        text-decoration: underline;
     }
 }
 
@@ -561,6 +579,19 @@ h2 {
     line-height: normal;
     color: #000000;
     text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.testimonials-link:hover {
+    text-decoration: underline;
+}
+
+.testimonials-link:focus-visible {
+    border: 10px grey;
+    outline: white;
+    background-color: grey;
+    border-radius: 5px;
+    color: white;
 }
 
 .testimonials-large-foto-wrap {
@@ -572,6 +603,12 @@ h2 {
 .testimonials-large-foto {
     width: 467.73px;
     height: 760px;
+    filter: contrast(70%);
+    transition: all 0.5s ease;
+}
+
+.testimonials-large-foto:hover {
+    filter: contrast(100%);
 }
 
 .testimonials-small-foto-wrap {
@@ -736,6 +773,12 @@ h2 {
     line-height: 1.25;
     list-style-type: none;
     padding-left: 80px;
+}
+
+.strengths-list li:hover {
+    background-color: rgb(223, 199, 199); 
+    border-radius: 15px;
+    transition: all 0.5s ease;
 }
 
 /*Код с помощью autoprefixer CSS online*/
