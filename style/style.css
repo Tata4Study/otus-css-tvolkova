@@ -18,8 +18,39 @@ body {
     margin: 0 auto;
     background-color: #FFFFFF;
 }
+.navigation {
+    max-width: 100%;
+}
 
-header {
+.nav-item {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: normal;
+    margin-top: 35px;
+    margin-bottom: 45px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.card-title {
+    font-family: Playfair Display, serif;
+    font-weight: normal;
+    font-size: 86px;
+    line-height: normal;
+    padding-top: 10%;
+    }
+
+.card-text {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    padding-bottom: 10%;
+}
+
+
+/*header {
     height: 135px;
     max-width: 1440px;
     margin: 0 auto;
@@ -66,8 +97,6 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*z-index: 10;*/
-    
 }
 
 h1 {
@@ -75,10 +104,6 @@ h1 {
     font-weight: normal;
     font-size: 86px;
     line-height: normal;
-   /* padding-top: 105px;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 10px;*/
     padding: 105px 120px 8px;
    }
 
@@ -94,7 +119,6 @@ h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: normal;
-   /* padding-top: 8px;*/
     padding-bottom: 100px;
 }
 
@@ -167,7 +191,7 @@ h2 {
 .img-rectangle::before {
     content: "-";
     color: #0d0d0d;
-    font-size: 5em /*80px*/;
+    font-size: 5em;
     line-height: 0.7; 
     margin-left: -3px;
 }
