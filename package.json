@@ -1,0 +1,14 @@
+{
+  "name": "otus-css-tvolkova",
+  "version": "1.0.0",
+  "description": "1. Овладеть навыками верстки сайтов\r 1. Освоить основные технологии и приемы в верстке: box model, position, float, flexbox, grid и др.\r 1. Изучить и освоить новые для меня понятия:  media queries, fallbacks, основý оптимизации, BEM номенклатура, фреймворки bootstrap или tailwind и пр.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
