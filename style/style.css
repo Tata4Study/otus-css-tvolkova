@@ -138,7 +138,7 @@ nav {
     margin-bottom: 80px;
 }
 
-.hero-wrapper {
+.hero-section-content {
     max-width: 690px; 
     min-height: 360px;  
     background-color: #FFFFFF;
@@ -164,7 +164,7 @@ h3 {
     line-height: 114.64px;
    }
      
-.subtitle {
+.hero-section-content__subtitle {
     font-family: Roboto;
     font-weight: 500;
     font-size: 20px;
@@ -190,7 +190,7 @@ h3 {
         margin-bottom: 45px;
     }
 
-    .hero-wrapper {
+    .hero-section-content {
         width: 100%;
         top: 160px;
     }
@@ -200,7 +200,7 @@ h3 {
         padding: 130px 0 10px 0;
     }
 
-    .subtitle {
+    .hero-secton-content__subtitle{
         font-size: 18px;
         padding: 4px 12px 110px 0;
     }
@@ -212,7 +212,7 @@ h3 {
     max-width: 100%;
 }
 
-.biography-section-wrapper {
+.biography-section-flexbox {
     margin-top: -30px;
     display: flex;
     flex-direction: row;
@@ -230,28 +230,28 @@ h2 {
     line-height: 28.13px; 
 }
 
-.biography-section-title {
+.biography-section__title {
     transform: rotate(270deg);
     padding-right: 80px;
     margin-left: 65px;
     text-align: center;
 }
 
-.biography-img-wrapper {
+.biography-img-box{
     order: -1;
 }
 
-.biography-picture {
+.biography-img-box__picture {
     max-width: 100%;
     max-height: 840px;
 }
 
-.biography-content {
+.biography-text-content {
     align-self: center;
     padding-left: 138px;
 }
 
-.biography-position {
+.biography-text-content__position {
     font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
@@ -260,7 +260,7 @@ h2 {
     margin-top: 37px;
 }
 
-.biography-skills {
+.biography-text-content__skills {
     font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
@@ -282,7 +282,7 @@ h2 {
     margin-left: -3px;
 }
 
-.biography-blockquote {
+.biography-text-content__blockquote {
     font-family: Bitter;
     font-weight: 400;
     font-size: 26px;
@@ -302,7 +302,7 @@ h2 {
         margin-right: 9px;
     }
 
-    .biography-section-title {
+    .biography-section__title {
         transform: rotate(0deg);
         padding-right: 28px;
         text-align: right;
@@ -310,7 +310,7 @@ h2 {
         z-index: 1;
     }
     
-    .biography-section-wrapper {
+    .biography-section-flexbox {
         max-width: 100%;
         margin-top: -22px;
         align-self: flex-start;
@@ -323,13 +323,13 @@ h2 {
         gap: 0;
     }
 
-    .biography-img-wrapper {
+    .biography-img-box {
         order: 3;
         margin-left: 0;
         max-width: 100%;
     }
 
-    .biography-content {
+    .biography-text-content {
         padding-top: 0; 
         padding-left: 0;
         display: flex;
@@ -339,7 +339,7 @@ h2 {
         align-items: start;
     }
 
-    .biography-position {
+    .biography-text-content__position {
         font-family: Roboto;
         font-weight: 500;
         font-size: 18px;
@@ -351,7 +351,7 @@ h2 {
     }
 
     /*Для переноса слов добавлены классы*/
-    .biography-skills-mobile{
+    .biography-text-content__skills_mobile{
         line-height: 1.21;
         color: #000000;
         margin-top: 0;
@@ -361,7 +361,7 @@ h2 {
         flex-direction: column;
         }
     
-    .skills-mobile::before {
+    .skills_mobile::before {
         content: "- ";
     }
 
@@ -369,7 +369,7 @@ h2 {
         content: none;
     }
 
-    .biography-blockquote {
+    .biography-text-content__blockquote {
         font-family: Bitter;
         font-weight: 300;
         font-size: 30px;
@@ -404,12 +404,12 @@ h2 {
         content: none;
     }
 
-    .biography-img-wrapper {
+    .biography-img-box {
         max-width: 100%;
         align-self: center;
     }
 
-    .biography-picture-mobile {
+    .biography-img-box__picture-mobile {
         width: 100%;
     }
 }
