@@ -164,7 +164,7 @@ h3 {
     line-height: 114.64px;
    }
      
-.hero-section-content__subtitle {
+.hero-section__subtitle {
     font-family: Roboto;
     font-weight: 500;
     font-size: 20px;
@@ -200,7 +200,7 @@ h3 {
         padding: 130px 0 10px 0;
     }
 
-    .hero-secton-content__subtitle{
+    .hero-secton__subtitle{
         font-size: 18px;
         padding: 4px 12px 110px 0;
     }
@@ -424,12 +424,12 @@ h2 {
     height: 677px;
 }
 
-.designers-section-title {
+.designers-section__title {
     margin-left: 140px;
     height: 58px;
 }
 
-.designers-section-wrap {
+.designers-section-flexbox {
     height: 619px;
     padding-top: 20px;
     margin-left: 20px;
@@ -482,12 +482,12 @@ h2 {
      margin-bottom: 80px;
     }
     
-    .designers-section-title {
+    .designers-section__title {
         margin-left: 15px;
         height: 35px;
     }
     
-    .designers-section-wrap {
+    .designers-section__flexbox {
        margin-left: 16px;
     }
     
