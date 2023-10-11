@@ -735,17 +735,17 @@ h2 {
     margin-bottom: 100px;
 }
 
-.strong-points-section-wrap {
+.strong-points-section-box {
     max-width: 98.6%;
     margin-left: 1.4%; 
 }
 
-.strong-points-section-title {
+.strong-points-section__title {
     height: 58px;
     padding-left: 17%;
 }
 
-.strong-points-content {
+.strong-points-section__content {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -755,18 +755,18 @@ h2 {
     overflow-x: scroll;
 }
 
-.strong-points-strengths {
+.strong-points-section-list-box {
     align-self: flex-start;
     padding-left: 40px;
     padding-right: 40px;
 }
 
-.strong-points-strengths-title {
+.strong-points-section-list-box__title {
     margin-top: -10px;
     margin-bottom: 10px;
 }
 
-.strengths-list {
+.strong-points-section-list {
     font-family: Bitter;
     font-weight: 400;
     font-size: 34px;
@@ -775,7 +775,7 @@ h2 {
     padding-left: 80px;
 }
 
-.strengths-list li:hover {
+.strong-points-section-list li:hover {
     background-color: rgb(223, 199, 199); 
     border-radius: 15px;
     transition: all 0.5s ease;
@@ -855,7 +855,7 @@ h2 {
 }*/
 
 @supports (display: grid) {
-    .strong-points-content {
+    .strong-points-section__content {
         display: grid;
         grid-template-columns: 335px 335px 451px 335px 335px;
         grid-template-rows: 100%;
@@ -863,7 +863,7 @@ h2 {
         overflow-x: scroll;
     }
 
-    .strong-points-strengths {
+    .strong-points-section-list {
         justify-self: center;
     }
 }
@@ -876,12 +876,12 @@ h2 {
         margin-bottom: 12px;
     }
     
-    .strong-points-section-title {
+    .strong-points-section__title {
         height: 52px;
         padding-left: 10.5px;
     }
     
-    .strong-points-content {
+    .strong-points-section__content {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -891,21 +891,21 @@ h2 {
         overflow-x: scroll;
     }
     
-    .strong-points-strengths {
+    .strong-points-section-list-box{
         align-self: start;
         order: -1;
         padding-left: 40px;
         padding-right: 0px;
     }
     
-    .strong-points-strengths-title {
+    .strong-points-section-list-box__title {
         margin-left: -30px;
         margin-bottom: 13.5px;
         font-size: 46px;
         line-height: normal;
     }
     
-    .strengths-list {
+    .strong-points-section-list {
         font-size: 24px;
         line-height: 1.55;
         list-style-type: none;
@@ -914,7 +914,7 @@ h2 {
     }
 
     /*картинки только на десктопе*/
-    .strengths-img-only-desktop{
+    .strong-points-section__content-img__only-desktop{
         display: none;
     }
 }
