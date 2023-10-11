@@ -45,7 +45,7 @@ nav {
     padding-top: 52px;
 }
 
-.menu { 
+.menu__list-item{ 
     font-family: Roboto;
     font-weight: 500;
     font-size: 24px;
@@ -55,19 +55,19 @@ nav {
     display: inline; 
 }
 
-.menu-link {
+.menu__list-item-link {
     color: #000000;  
     text-decoration: none;
 
     transition: all 0.5s ease;
 }
 
-.menu-link:hover {
+.menu__list-item-link:hover {
     text-decoration: underline;
     color: rgb(129, 118, 118)
 }
 
-.menu-link:focus-visible {
+.menu__list-item-link:focus-visible {
     outline-color: white;
     border: 13px solid grey;
     border-radius: 15px;
@@ -75,7 +75,7 @@ nav {
     color: white;
 }
 
-.menu-list-mobile {
+.menu__list-mobile {
     display: none;
 }
 
@@ -98,7 +98,7 @@ nav {
         justify-content: end;  
     }
     
-    .menu { 
+    .menu__list-item { 
         font-family: Bitter;
         font-weight: 400;
         font-size: 40px;
@@ -108,22 +108,22 @@ nav {
         margin-left: 0px;
     }
     
-    .menu-link {
+    .menu__list-item-link {
         color: #000000;  
         text-decoration: none;
     }
     
-    .menu-list {
+    .menu__list {
         display: none;
     }
 
-    .menu-list-mobile {
+    .menu__list-mobile {
         display: flex;
         justify-content: space-around;
         width: 100%;
         min-width: 350px;
     }
-    .menu-link:focus-visible {
+    .menu__list-item-link:focus-visible {
         text-decoration: underline;
     }
 }
@@ -385,7 +385,7 @@ h2 {
         display: none;
     }
 
-    .biography-title {
+    .biography-text-content__title {
         margin-top: 88px;
         padding-left: -px;
         font-family: Playfair Display, serif;
@@ -395,7 +395,7 @@ h2 {
         margin-bottom: 35px;
     }
 
-    .biography-title::before {
+    .biography-text-content__title::before {
         content: "-";
         padding-left: 18px;
     }
@@ -789,17 +789,17 @@ h2 {
     margin-bottom: 100px;
 }
 
-.strong-points-section-wrap {
+.strong-points-section-box {
     max-width: 98.6%;
     margin-left: 1.4%; 
 }
 
-.strong-points-section-title {
+.strong-points-section__title {
     height: 58px;
     padding-left: 17%;
 }
 
-.strong-points-content {
+.strong-points-section__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 335px 20px 335px 20px 451px 20px 335px 20px 335px;
@@ -810,42 +810,42 @@ h2 {
     overflow-x: scroll;
 }
 
-.strong-points-content > *:nth-child(1) {
+.strong-points-section__content > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
 }
 
-.strong-points-content > *:nth-child(2) {
+.strong-points-section__content > *:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
 }
 
-.strong-points-content > *:nth-child(3) {
+.strong-points-section__content > *:nth-child(3) {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
 }
 
-.strong-points-content > *:nth-child(4) {
+.strong-points-section__content > *:nth-child(4) {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
 }
 
-.strong-points-content > *:nth-child(5) {
+.strong-points-section__content > *:nth-child(5) {
     -ms-grid-row: 1;
     -ms-grid-column: 9;
 }
 
-.strong-points-strengths {
+.strong-points-section-list-box {
     -ms-grid-column-align: center;
         justify-self: center;
 }
 
-.strong-points-strengths-title {
+.strong-points-section-list-box__title {
     margin-top: -10px;
     margin-bottom: 10px;
 }
 
-.strengths-list {
+.strong-points-section-list {
     font-family: Bitter;
     font-weight: 400;
     font-size: 34px;
