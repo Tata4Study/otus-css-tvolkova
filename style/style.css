@@ -409,7 +409,7 @@ h2 {
         align-self: center;
     }
 
-    .biography-img-box__picture-mobile {
+    .biography-img-box__picture_mobile {
         width: 100%;
     }
 }
@@ -450,14 +450,14 @@ h2 {
 }
 
 /*добавляется при увеличенном изображении к тегу img*/
-.description-foto-large {
+.description-foto_large {
     height: 550px;
     width: 572px;
     z-index: 100;
 }
 
 /*добавляется при увеличенном изображении к тегу figcaption*/
-.description-large {
+.description_large {
     margin-left: 240px;
 }
 
@@ -496,7 +496,7 @@ h2 {
     }
     
     /*добавляется при увеличенном изображении к тегу img*/
-    .description-foto-large {
+    .description-foto_large {
         height: 437px;
         width: 310px;
         z-index: 100;
@@ -504,7 +504,7 @@ h2 {
     
     /*добавляется при увеличенном изображении к тегу figcaption*/
     /*в мобильной версии сдвиг подписи вправо не нужен*/
-    .description-large {
+    .description_large {
         margin-left: 4px;
     }
     
@@ -594,24 +594,24 @@ h2 {
     color: white;
 }
 
-.testimonials-section-box__foto-box-large{
+.testimonials-section-box__foto-box_large{
     grid-column: 2 / 3;
     grid-row: 1 / span 2;
     overflow-x: hidden;
 }
 
-.testimonials-section-box__foto-large {
+.testimonials-section-box__foto_large {
     width: 467.73px;
     height: 760px;
     filter: contrast(70%);
     transition: all 0.5s ease;
 }
 
-.testimonials-section-box__foto-large:hover {
+.testimonials-section-box__foto_large:hover {
     filter: contrast(100%);
 }
 
-.testimonials-section-box__foto-box-small {
+.testimonials-section-box__foto-box_small {
     grid-column: 5 / 6;
     grid-row: 2 / 3;
     align-self: end;
@@ -619,7 +619,7 @@ h2 {
     margin: 0 0 12% -10%;
    }
 
-.testimonials-section-box__foto-small {
+.testimonials-section-box__foto_small {
     max-width: 100%;
     max-height: 100%;
 }
@@ -701,15 +701,15 @@ h2 {
         padding-top: 2px;
     }
 
-    .testimonials-section-box__foto-box-large {
+    .testimonials-section-box__foto-box_large {
         display: none;
     }
 
-    .testimonials-section-box__foto-box-small {
+    .testimonials-section-box__foto-box_small {
        margin: 0 auto 2px;
     }
 
-    .testimonials-section-box__foto-small {
+    .testimonials-section-box__foto_small {
         max-width: 100%;
         max-height: 100%;
     }
@@ -914,7 +914,7 @@ h2 {
     }
 
     /*картинки только на десктопе*/
-    .strong-points-section__content-img__only-desktop{
+    .strong-points-section__content-img_only-desktop{
         display: none;
     }
 }
