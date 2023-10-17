@@ -45,7 +45,7 @@ nav {
     padding-top: 52px;
 }
 
-.menu { 
+.menu__list-item{ 
     font-family: Roboto;
     font-weight: 500;
     font-size: 24px;
@@ -55,19 +55,19 @@ nav {
     display: inline; 
 }
 
-.menu-link {
+.menu__list-item-link {
     color: #000000;  
     text-decoration: none;
 
     transition: all 0.5s ease;
 }
 
-.menu-link:hover {
+.menu__list-item-link:hover {
     text-decoration: underline;
     color: rgb(129, 118, 118)
 }
 
-.menu-link:focus-visible {
+.menu__list-item-link:focus-visible {
     outline-color: white;
     border: 13px solid grey;
     border-radius: 15px;
@@ -75,7 +75,7 @@ nav {
     color: white;
 }
 
-.menu-list-mobile {
+.menu__list-mobile {
     display: none;
 }
 
@@ -98,7 +98,7 @@ nav {
         justify-content: end;  
     }
     
-    .menu { 
+    .menu__list-item { 
         font-family: Bitter;
         font-weight: 400;
         font-size: 40px;
@@ -108,22 +108,22 @@ nav {
         margin-left: 0px;
     }
     
-    .menu-link {
+    .menu__list-item-link {
         color: #000000;  
         text-decoration: none;
     }
     
-    .menu-list {
+    .menu__list {
         display: none;
     }
 
-    .menu-list-mobile {
+    .menu__list-mobile {
         display: flex;
         justify-content: space-around;
         width: 100%;
         min-width: 350px;
     }
-    .menu-link:focus-visible {
+    .menu__list-item-link:focus-visible {
         text-decoration: underline;
     }
 }
@@ -138,7 +138,7 @@ nav {
     margin-bottom: 80px;
 }
 
-.hero-wrapper {
+.hero-section-content {
     max-width: 690px; 
     min-height: 360px;  
     background-color: #FFFFFF;
@@ -164,7 +164,7 @@ h3 {
     line-height: 114.64px;
    }
      
-.subtitle {
+.hero-section__subtitle {
     font-family: Roboto;
     font-weight: 500;
     font-size: 20px;
@@ -190,7 +190,7 @@ h3 {
         margin-bottom: 45px;
     }
 
-    .hero-wrapper {
+    .hero-section-content {
         width: 100%;
         top: 160px;
     }
@@ -200,7 +200,7 @@ h3 {
         padding: 130px 0 10px 0;
     }
 
-    .subtitle {
+    .hero-secton__subtitle{
         font-size: 18px;
         padding: 4px 12px 110px 0;
     }
@@ -212,7 +212,7 @@ h3 {
     max-width: 100%;
 }
 
-.biography-section-wrapper {
+.biography-section-flexbox {
     margin-top: -30px;
     display: flex;
     flex-direction: row;
@@ -230,28 +230,28 @@ h2 {
     line-height: 28.13px; 
 }
 
-.biography-section-title {
+.biography-section__title {
     transform: rotate(270deg);
     padding-right: 80px;
     margin-left: 65px;
     text-align: center;
 }
 
-.biography-img-wrapper {
+.biography-img-box{
     order: -1;
 }
 
-.biography-picture {
+.biography-img-box__picture {
     max-width: 100%;
     max-height: 840px;
 }
 
-.biography-content {
+.biography-text-content {
     align-self: center;
     padding-left: 138px;
 }
 
-.biography-position {
+.biography-text-content__position {
     font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
@@ -260,7 +260,7 @@ h2 {
     margin-top: 37px;
 }
 
-.biography-skills {
+.biography-text-content__skills {
     font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
@@ -282,7 +282,7 @@ h2 {
     margin-left: -3px;
 }
 
-.biography-blockquote {
+.biography-text-content__blockquote {
     font-family: Bitter;
     font-weight: 400;
     font-size: 26px;
@@ -302,7 +302,7 @@ h2 {
         margin-right: 9px;
     }
 
-    .biography-section-title {
+    .biography-section__title {
         transform: rotate(0deg);
         padding-right: 28px;
         text-align: right;
@@ -310,7 +310,7 @@ h2 {
         z-index: 1;
     }
     
-    .biography-section-wrapper {
+    .biography-section-flexbox {
         max-width: 100%;
         margin-top: -22px;
         align-self: flex-start;
@@ -323,13 +323,13 @@ h2 {
         gap: 0;
     }
 
-    .biography-img-wrapper {
+    .biography-img-box {
         order: 3;
         margin-left: 0;
         max-width: 100%;
     }
 
-    .biography-content {
+    .biography-text-content {
         padding-top: 0; 
         padding-left: 0;
         display: flex;
@@ -339,7 +339,7 @@ h2 {
         align-items: start;
     }
 
-    .biography-position {
+    .biography-text-content__position {
         font-family: Roboto;
         font-weight: 500;
         font-size: 18px;
@@ -351,7 +351,7 @@ h2 {
     }
 
     /*Для переноса слов добавлены классы*/
-    .biography-skills-mobile{
+    .biography-text-content__skills_mobile{
         line-height: 1.21;
         color: #000000;
         margin-top: 0;
@@ -361,7 +361,7 @@ h2 {
         flex-direction: column;
         }
     
-    .skills-mobile::before {
+    .skills_mobile::before {
         content: "- ";
     }
 
@@ -369,7 +369,7 @@ h2 {
         content: none;
     }
 
-    .biography-blockquote {
+    .biography-text-content__blockquote {
         font-family: Bitter;
         font-weight: 300;
         font-size: 30px;
@@ -385,7 +385,7 @@ h2 {
         display: none;
     }
 
-    .biography-title {
+    .biography-text-content__title {
         margin-top: 88px;
         padding-left: -px;
         font-family: Playfair Display, serif;
@@ -395,7 +395,7 @@ h2 {
         margin-bottom: 35px;
     }
 
-    .biography-title::before {
+    .biography-text-content__title::before {
         content: "-";
         padding-left: 18px;
     }
@@ -404,12 +404,12 @@ h2 {
         content: none;
     }
 
-    .biography-img-wrapper {
+    .biography-img-box {
         max-width: 100%;
         align-self: center;
     }
 
-    .biography-picture-mobile {
+    .biography-img-box__picture_mobile {
         width: 100%;
     }
 }
@@ -424,12 +424,12 @@ h2 {
     height: 677px;
 }
 
-.designers-section-title {
+.designers-section__title {
     margin-left: 140px;
     height: 58px;
 }
 
-.designers-section-wrap {
+.designers-section-flexbox {
     height: 619px;
     padding-top: 20px;
     margin-left: 20px;
@@ -450,14 +450,14 @@ h2 {
 }
 
 /*добавляется при увеличенном изображении к тегу img*/
-.description-foto-large {
+.description-foto_large {
     height: 550px;
     width: 572px;
     z-index: 100;
 }
 
 /*добавляется при увеличенном изображении к тегу figcaption*/
-.description-large {
+.description_large {
     margin-left: 240px;
 }
 
@@ -482,12 +482,12 @@ h2 {
      margin-bottom: 80px;
     }
     
-    .designers-section-title {
+    .designers-section__title {
         margin-left: 15px;
         height: 35px;
     }
     
-    .designers-section-wrap {
+    .designers-section__flexbox {
        margin-left: 16px;
     }
     
@@ -496,7 +496,7 @@ h2 {
     }
     
     /*добавляется при увеличенном изображении к тегу img*/
-    .description-foto-large {
+    .description-foto_large {
         height: 437px;
         width: 310px;
         z-index: 100;
@@ -504,7 +504,7 @@ h2 {
     
     /*добавляется при увеличенном изображении к тегу figcaption*/
     /*в мобильной версии сдвиг подписи вправо не нужен*/
-    .description-large {
+    .description_large {
         margin-left: 4px;
     }
     
@@ -525,7 +525,7 @@ h2 {
     margin-bottom: 150px;
 }
 
-.testimonials-section-wrap{
+.testimonials-section-box{
     max-height: 100%;
     display: grid;
     margin-left: 8.5%;
@@ -536,7 +536,7 @@ h2 {
     gap: 20px;
 }
 
-.testimonials-section-title {
+.testimonials-section-box__title {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     transform: rotate(270deg);
@@ -544,7 +544,7 @@ h2 {
     margin-top: 115px;
 }
 
-.testimonials-list {
+.testimonials-section-box__list {
     list-style-type: none;
     grid-column: 1 / 2;
     grid-row: 1 / span 2;
@@ -554,7 +554,7 @@ h2 {
     grid-template-columns: 100%;
 }
 
-.testimonials-list-item {
+.testimonials-section-box__list-item {
     transform: rotate(270deg);
     place-self: center;
     margin-left: 21%;
@@ -594,24 +594,24 @@ h2 {
     color: white;
 }
 
-.testimonials-large-foto-wrap {
+.testimonials-section-box__foto-box_large{
     grid-column: 2 / 3;
     grid-row: 1 / span 2;
     overflow-x: hidden;
 }
 
-.testimonials-large-foto {
+.testimonials-section-box__foto_large {
     width: 467.73px;
     height: 760px;
     filter: contrast(70%);
     transition: all 0.5s ease;
 }
 
-.testimonials-large-foto:hover {
+.testimonials-section-box__foto_large:hover {
     filter: contrast(100%);
 }
 
-.testimonials-small-foto-wrap {
+.testimonials-section-box__foto-box_small {
     grid-column: 5 / 6;
     grid-row: 2 / 3;
     align-self: end;
@@ -619,12 +619,12 @@ h2 {
     margin: 0 0 12% -10%;
    }
 
-.testimonials-small-foto {
+.testimonials-section-box__foto_small {
     max-width: 100%;
     max-height: 100%;
 }
 
-.testimonials-blockquote {
+.testimonials-section-box__blockquote {
     font-family: Bitter;
     font-weight: 400;
     font-size: 32px;
@@ -638,7 +638,7 @@ h2 {
 }
 
 @media screen and (max-width: 1200px) {
-    .testimonials-blockquote {
+    .testimonials-section-box__blockquote {
         grid-column: 4 / 7;
         padding-left: 30px;
         padding-right: 30px;
@@ -654,7 +654,7 @@ h2 {
         margin-bottom: 32px;
 }
 
-    .testimonials-section-wrap{
+    .testimonials-section-box{
         max-width: 100%;
         margin-left: 0;
         display: flex;
@@ -664,14 +664,14 @@ h2 {
         flex-wrap: nowrap;
 }
 
-    .testimonials-section-title {
+    .testimonials-section-box__title {
         transform: rotate(0deg);
         align-self: end;
         margin-right: 25px;
         margin-top: 8px;
 }
 
-    .testimonials-list {
+    .testimonials-section-box__list {
         list-style-type: none;
         order: 10;
         max-width: 100%;
@@ -686,7 +686,7 @@ h2 {
         column-gap: 25px;
     }
 
-    .testimonials-list-item {
+    .testimonials-section-box__list-item {
         transform: rotate(0deg);
         margin-left: 0px;
         margin-right: 0px;
@@ -696,25 +696,25 @@ h2 {
         margin-left: -8px;
     }
 
-    .testimonials-item-mobile {
+    .testimonials-section-box__list-item_mobile {
         margin-left: -12px;
         padding-top: 2px;
     }
 
-    .testimonials-large-foto-wrap {
+    .testimonials-section-box__foto-box_large {
         display: none;
     }
 
-    .testimonials-small-foto-wrap {
+    .testimonials-section-box__foto-box_small {
        margin: 0 auto 2px;
     }
 
-    .testimonials-small-foto {
+    .testimonials-section-box__foto_small {
         max-width: 100%;
         max-height: 100%;
     }
 
-    .testimonials-blockquote {
+    .testimonials-section-box__blockquote {
         font-weight: 300;
         font-size: 30px;
         line-height: normal;
@@ -735,17 +735,17 @@ h2 {
     margin-bottom: 100px;
 }
 
-.strong-points-section-wrap {
+.strong-points-section-box {
     max-width: 98.6%;
     margin-left: 1.4%; 
 }
 
-.strong-points-section-title {
+.strong-points-section__title {
     height: 58px;
     padding-left: 17%;
 }
 
-.strong-points-content {
+.strong-points-section__content {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -755,18 +755,18 @@ h2 {
     overflow-x: scroll;
 }
 
-.strong-points-strengths {
+.strong-points-section-list-box {
     align-self: flex-start;
     padding-left: 40px;
     padding-right: 40px;
 }
 
-.strong-points-strengths-title {
+.strong-points-section-list-box__title {
     margin-top: -10px;
     margin-bottom: 10px;
 }
 
-.strengths-list {
+.strong-points-section-list {
     font-family: Bitter;
     font-weight: 400;
     font-size: 34px;
@@ -775,7 +775,7 @@ h2 {
     padding-left: 80px;
 }
 
-.strengths-list li:hover {
+.strong-points-section-list li:hover {
     background-color: rgb(223, 199, 199); 
     border-radius: 15px;
     transition: all 0.5s ease;
@@ -789,17 +789,17 @@ h2 {
     margin-bottom: 100px;
 }
 
-.strong-points-section-wrap {
+.strong-points-section-box {
     max-width: 98.6%;
     margin-left: 1.4%; 
 }
 
-.strong-points-section-title {
+.strong-points-section__title {
     height: 58px;
     padding-left: 17%;
 }
 
-.strong-points-content {
+.strong-points-section__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 335px 20px 335px 20px 451px 20px 335px 20px 335px;
@@ -810,42 +810,42 @@ h2 {
     overflow-x: scroll;
 }
 
-.strong-points-content > *:nth-child(1) {
+.strong-points-section__content > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
 }
 
-.strong-points-content > *:nth-child(2) {
+.strong-points-section__content > *:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
 }
 
-.strong-points-content > *:nth-child(3) {
+.strong-points-section__content > *:nth-child(3) {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
 }
 
-.strong-points-content > *:nth-child(4) {
+.strong-points-section__content > *:nth-child(4) {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
 }
 
-.strong-points-content > *:nth-child(5) {
+.strong-points-section__content > *:nth-child(5) {
     -ms-grid-row: 1;
     -ms-grid-column: 9;
 }
 
-.strong-points-strengths {
+.strong-points-section-list-box {
     -ms-grid-column-align: center;
         justify-self: center;
 }
 
-.strong-points-strengths-title {
+.strong-points-section-list-box__title {
     margin-top: -10px;
     margin-bottom: 10px;
 }
 
-.strengths-list {
+.strong-points-section-list {
     font-family: Bitter;
     font-weight: 400;
     font-size: 34px;
@@ -855,7 +855,7 @@ h2 {
 }*/
 
 @supports (display: grid) {
-    .strong-points-content {
+    .strong-points-section__content {
         display: grid;
         grid-template-columns: 335px 335px 451px 335px 335px;
         grid-template-rows: 100%;
@@ -863,7 +863,7 @@ h2 {
         overflow-x: scroll;
     }
 
-    .strong-points-strengths {
+    .strong-points-section-list {
         justify-self: center;
     }
 }
@@ -876,12 +876,12 @@ h2 {
         margin-bottom: 12px;
     }
     
-    .strong-points-section-title {
+    .strong-points-section__title {
         height: 52px;
         padding-left: 10.5px;
     }
     
-    .strong-points-content {
+    .strong-points-section__content {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -891,21 +891,21 @@ h2 {
         overflow-x: scroll;
     }
     
-    .strong-points-strengths {
+    .strong-points-section-list-box{
         align-self: start;
         order: -1;
         padding-left: 40px;
         padding-right: 0px;
     }
     
-    .strong-points-strengths-title {
+    .strong-points-section-list-box__title {
         margin-left: -30px;
         margin-bottom: 13.5px;
         font-size: 46px;
         line-height: normal;
     }
     
-    .strengths-list {
+    .strong-points-section-list {
         font-size: 24px;
         line-height: 1.55;
         list-style-type: none;
@@ -914,7 +914,7 @@ h2 {
     }
 
     /*картинки только на десктопе*/
-    .strengths-img-only-desktop{
+    .strong-points-section__content-img_only-desktop{
         display: none;
     }
 }

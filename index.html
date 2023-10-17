@@ -10,172 +10,145 @@
     <title>Document</title>
 </head>
 <body>
-    <!--Блок меню-->
   <header>
-        <nav>
-           <!-- <ol class="menu-list">
-                <li class="menu"><a class="menu-link" href="#biography"><span class="menu-item">Biography</span><span class="menu-item-mobile">B</span></a></li>
-                <li class="menu"><a class="menu-link" href="#designers"><span class="menu-item">Designers</span><span class="menu-item-mobile">D</span></a></li>
-                <li class="menu"><a class="menu-link" href="#testimonials"><span class="menu-item">Testimonials</span><span class="menu-item-mobile">T</span></a></li>
-                <li class="menu"><a class="menu-link" href="#strong-points"><span class="menu-item">Strong points</span><span class="menu-item-mobile">S</span></a></li>
+        <nav class="menu">
+           <!-- <ol class="menu__list">
+                <li class="menu__list-item"><a class="menu-link" href="#biography"><span class="menu-item">Biography</span><span class="menu-item-mobile">B</span></a></li>
+                <li class="menu__list-item"><a class="menu-link" href="#designers"><span class="menu-item">Designers</span><span class="menu-item-mobile">D</span></a></li>
+                <li class="menu__list-item"><a class="menu-link" href="#testimonials"><span class="menu-item">Testimonials</span><span class="menu-item-mobile">T</span></a></li>
+                <li class="menu__list-item"><a class="menu-link" href="#strong-points"><span class="menu-item">Strong points</span><span class="menu-item-mobile">S</span></a></li>
             </ol>-->
-            <ol class="menu-list">
-                <li class="menu"><a class="menu-link" href="#biography"><span class="menu-item">Biography</span></a></li>
-                <li class="menu"><a class="menu-link" href="#designers"><span class="menu-item">Designers</span></a></li>
-                <li class="menu"><a class="menu-link" href="#testimonials"><span class="menu-item">Testimonials</span></a></li>
-                <li class="menu"><a class="menu-link" href="#strong-points"><span class="menu-item">Strong points</span></a></li>
+            <ol class="menu__list">
+                <li class="menu__list-item"><a class="menu__list-item-link" href="#biography"><span class="menu-item">Biography</span></a></li>
+                <li class="menu__list-item"><a class="menu__list-item-link" href="#designers"><span class="menu-item">Designers</span></a></li>
+                <li class="menu__list-item"><a class="menu__list-item-link" href="#testimonials"><span class="menu-item">Testimonials</span></a></li>
+                <li class="menu__list-item"><a class="menu__list-item-link" href="#strong-points"><span class="menu-item">Strong points</span></a></li>
             </ol>
-            <ol class="menu-list-mobile">
-                <li class="menu"><a class="menu-link" href="#biography"><span class="menu-item-mobile menu-mobile-bio">B</span></a></li>
-                <li class="menu"><a class="menu-link" href="#designers"><span class="menu-item-mobile menu-mobile-des">D</span></a></li>
-                <li class="menu"><a class="menu-link" href="#testimonials"><span class="menu-item-mobile ">T</span></a></li>
-                <li class="menu"><a class="menu-link" href="#strong-points"><span class="menu-item-mobile">S</span></a></li>
+            <ol class="menu__list-mobile">
+                <li class="menu__list-item"><a class="menu__list-item-link" href="#biography"><span class="menu-item-mobile menu-mobile-bio">B</span></a></li>
+                <li class="menu__list-item"><a class="menu__list-item-link" href="#designers"><span class="menu-item-mobile menu-mobile-des">D</span></a></li>
+                <li class="menu__list-item"><a class="menu__list-item-link" href="#testimonials"><span class="menu-item-mobile ">T</span></a></li>
+                <li class="menu__list-item"><a class="menu__list-item-link" href="#strong-points"><span class="menu-item-mobile">S</span></a></li>
             </ol>
         </nav>
     </header>
     
     <main>
-
-         <!--Блок Hero-section с названием-->
         <section class="hero-section">
-            <div class="hero-wrapper">
+            <div class="hero-section-content">
                 <h1>Mod Studio</h1>
-                <p class="subtitle">Modern Web Studio</p>
+                <p class="hero-section__subtitle">Modern Web Studio</p>
             </div>
-            <!--здесь должна быть фоновая картинка-->
         </section>
-      
-        <!--Блок Biography-->
-        <!--<section class="biography-section" id="biography">
-            <h2 class="biography-section-title">Biography</h2>
-            <div class="biography-img-wrapper"><img class="biography-picture" src="images/biography-section-picture.jpg" alt="art-director_foto"></div>
-            <div class="biography-content">
-                <h3>Katya<br> Mills</h3>
-                <p class="biography-position">Art Director</p>
-                <p class="biography-skills">
-                    <span class="skills">Scenography</span>
-                    <span class="skills">Styling</span>
-                    <span class="skills">Creative Photography</span>Design</p>
-                <div class="img-rectangle"></div>
-                <blockquote class="biography-blockquote">
-                    “The more I deal with the work<br>
-                    as something that is my own,<br>
-                    as something that is personal,<br>
-                    the more successful it is.”
-                </blockquote>
-            </div>
-        </section>-->
-
         <section class="biography-section" id="biography">
-            <h2 class="biography-section-title">Biography</h2>
-        <div class="biography-section-wrapper">
-        <div class="biography-img-wrapper">
-           <!-- <img class="biography-picture" src="images/biography-section-picture.jpg" alt="art-director_foto">-->
-            <picture>
-                <source class="biography-picture-mobile" srcset="images/biography-picture-mobile.jpg" media="(max-width: 576px)">
-                <img class="biography-picture" src="images/biography-section-picture.jpg" alt="art-director_foto"></picture></div>
-            <div class="biography-content">
-                <h3 class="biography-title">Katya<br> Mills</h3>
-                <p class="biography-position">Art Director</p>
-                <p class="biography-skills biography-skills-mobile">
-                    <span class="skills skills-mobile">Scenography</span>
-                    <span class="skills skills-mobile">Styling</span>
-                    <span class="skills skills-mobile">Creative Photography</span><span class="skills-mobile">Design</span></p>                    
-                <div class="img-rectangle"></div>
-                <blockquote class="biography-blockquote">
-                    “The more I deal with the work<br>
-                    as something that is my own,<br>
-                    as something that is personal,<br>
-                    the more successful it is.”
-                </blockquote>
+            <h2 class="biography-section__title">Biography</h2>
+            <div class="biography-section-flexbox">
+                <div class="biography-img-box">    
+                    <picture>
+                        <source class="biography-img-box__picture_mobile" srcset="images/biography-picture-mobile.jpg" media="(max-width: 576px)">
+                        <img class="biography-img-box__picture" src="images/biography-section-picture.jpg" alt="art-director_foto">
+                    </picture>
+                </div>
+                <div class="biography-text-content">
+                    <h3 class="biography-text-content__title">Katya<br> Mills</h3>
+                    <p class="biography-text-content__position">Art Director</p>
+                    <p class="biography-text-content__skills biography-text-content__skills_mobile">
+                        <span class="skills skills_mobile">Scenography</span>
+                        <span class="skills skills_mobile">Styling</span>
+                        <span class="skills skills_mobile">Creative Photography</span><span class="skills-mobile">Design</span></p>                    
+                    <div class="img-rectangle"></div>
+                    <blockquote class="biography-text-content__blockquote">
+                        “The more I deal with the work<br>
+                        as something that is my own,<br>
+                        as something that is personal,<br>
+                        the more successful it is.”
+                    </blockquote>
+                </div>
             </div>
-        </div>
         </section>
-
-        <!--Блок Designers-->
         <section class="designers-section" id="designers">
-            <h2 class="designers-section-title">Designers</h2>
-            <div class="designers-section-wrap">
-            <figure>
-                <picture>
-                    <source srcset="images/designers-jess-wonder.jpg" media="(max-width: 576px)">
-                <img class="designers-description-foto description-foto-large" src="images/designers-jess-wonder-large.jpg" alt="jess_wonder_foto"> </picture>
-                <figcaption class="description-large"><p class="designer-name">Jess Wonder</p>
-                    <p class="designer-about">From/ Be more flower</p>
-                    <p class="designer-about">Skills/ Design Strategy / Marketing</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="designers-description-foto" src="images/designers-kameron-clein.jpg" alt="kameron_clein_foto">
-                <figcaption><p class="designer-name">Kameron Clein</p>
-                    <p class="designer-about">From/ Be more flower</p>
-                    <p class="designer-about">Skills/ Design Strategy / Marketing</p>
-                </figcaption>
-            </figure>  
-            <figure>
-                <img class="designers-description-foto" src="images/designers-louisse-red.jpg" alt="louisse_red_foto">
-                <figcaption><p class="designer-name">Louisse Red</p>
-                    <p class="designer-about">From/ Be more flower</p>
-                    <p class="designer-about">Skills/ Design Strategy / Marketing</p>
-                </figcaption>
-            </figure>     
-            <figure>
-                <img class="designers-description-foto" src="images/designers-kameron-clein.jpg" alt="kameron_clein_foto">
-                <figcaption><p class="designer-name">Kameron Clein</p>
-                    <p class="designer-about">From/ Be more flower</p>
-                    <p class="designer-about">Skills/ Design Strategy / Marketing</p>
-                </figcaption>
-            </figure>  
-
-            <figure>
-                <img class="designers-description-foto" src="images/designers-kameron-clein.jpg" alt="kameron_clein_foto">
-                <figcaption><p class="designer-name">Kameron Clein</p>
-                    <p class="designer-about">From/ Be more flower</p>
-                    <p class="designer-about">Skills/ Design Strategy / Marketing</p>
-                </figcaption>
-            </figure>  
-            <figure >
-                <img class="designers-description-foto" src="images/designers-kameron-clein.jpg" alt="kameron_clein_foto">
-                <figcaption><p class="designer-name">Kameron Clein</p>
-                    <p class="designer-about">From/ Be more flower</p>
-                    <p class="designer-about">Skills/ Design Strategy / Marketing</p>
-                </figcaption>
-            </figure>  
-        </div>
+            <h2 class="designers-section__title">Designers</h2>
+            <div class="designers-section-flexbox">
+                <figure>
+                    <picture>
+                        <source srcset="images/designers-jess-wonder.jpg" media="(max-width: 576px)">
+                        <img class="designers-description-foto description-foto_large" src="images/designers-jess-wonder-large.jpg" alt="jess_wonder_foto"> 
+                    </picture>
+                    <figcaption class="description_large"><p class="designer-name">Jess Wonder</p>
+                        <p class="designer-about">From/ Be more flower</p>
+                        <p class="designer-about">Skills/ Design Strategy / Marketing</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="designers-description-foto" src="images/designers-kameron-clein.jpg" alt="kameron_clein_foto">
+                    <figcaption><p class="designer-name">Kameron Clein</p>
+                        <p class="designer-about">From/ Be more flower</p>
+                        <p class="designer-about">Skills/ Design Strategy / Marketing</p>
+                    </figcaption>
+                </figure>  
+                <figure>
+                    <img class="designers-description-foto" src="images/designers-louisse-red.jpg" alt="louisse_red_foto">
+                    <figcaption><p class="designer-name">Louisse Red</p>
+                        <p class="designer-about">From/ Be more flower</p>
+                        <p class="designer-about">Skills/ Design Strategy / Marketing</p>
+                    </figcaption>
+                </figure>     
+                <figure>
+                    <img class="designers-description-foto" src="images/designers-kameron-clein.jpg" alt="kameron_clein_foto">
+                    <figcaption><p class="designer-name">Kameron Clein</p>
+                        <p class="designer-about">From/ Be more flower</p>
+                        <p class="designer-about">Skills/ Design Strategy / Marketing</p>
+                    </figcaption>
+                </figure>  
+                <figure>
+                    <img class="designers-description-foto" src="images/designers-kameron-clein.jpg" alt="kameron_clein_foto">
+                    <figcaption><p class="designer-name">Kameron Clein</p>
+                        <p class="designer-about">From/ Be more flower</p>
+                        <p class="designer-about">Skills/ Design Strategy / Marketing</p>
+                    </figcaption>
+                </figure>  
+                <figure >
+                    <img class="designers-description-foto" src="images/designers-kameron-clein.jpg" alt="kameron_clein_foto">
+                    <figcaption><p class="designer-name">Kameron Clein</p>
+                        <p class="designer-about">From/ Be more flower</p>
+                        <p class="designer-about">Skills/ Design Strategy / Marketing</p>
+                    </figcaption>
+                </figure>  
+            </div>
         </section>
-    
-        <!--Блок Testimonials-->
-     <section class="testimonials-section" id="testimonials">
-           <div class="testimonials-section-wrap">
-                <h2 class="testimonials-section-title">Testimonials</h2>
-                <ul class="testimonials-list">
-                    <li class="testimonials-list-item item-website">
+        <section class="testimonials-section" id="testimonials">
+           <div class="testimonials-section-box">
+                <h2 class="testimonials-section-box__title">Testimonials</h2>
+                <ul class="testimonials-section-box__list">
+                    <li class="testimonials-section-box__list-item item-website">
                         <p class="testimonials-website">Website</p>
                         <a class="testimonials-link" href="https://www.whitepapers.com">www.whitepapers.com</a>
                     </li>
-                    <li class="testimonials-list-item testimonials-item-mobile">
+                    <li class="testimonials-section-box__list-item testimonials-section-box__list-item_mobile">
                         <p class="testimonials-website">Creativity</p>                   
                         <a class="testimonials-link" href="https://www.whitepapers.com">www.whitepapers.com</a>
                     </li>
-                    <li class="testimonials-list-item">
+                    <li class="testimonials-section-box__list-item">
                         <p class="testimonials-website">Creativity</p>
                         <a class="testimonials-link" href="https://www.whitepapers.com">www.whitepapers.com</a>
                     </li>
                 </ul>
-                <div class="testimonials-large-foto-wrap"><img class="testimonials-large-foto" src="images/testimonials-main-cafe.jpg" alt="foto-cafe-interior"></div>
-                <blockquote class="testimonials-blockquote">I just really want to do good work and work with some great people, people who challenge me.</blockquote>
-                <div class="testimonials-small-foto-wrap">
+                <div class="testimonials-section-box__foto-box_large">
+                    <img class="testimonials-section-box__foto_large" src="images/testimonials-main-cafe.jpg" alt="foto-cafe-interior">
+                </div>
+                <blockquote class="testimonials-section-box__blockquote">I just really want to do good work and work with some great people, people who challenge me.</blockquote>
+                <div class="testimonials-section-box__foto-box_small">
                     <picture>
-                    <source srcset="images/testimonials-picture-mobile.jpg" media="(max-width: 576px)">
-                    <img class="testimonials-small-foto" src="images/testimonials-small-bag.jpg" alt="foto-with-bag"></picture></div>
+                        <source srcset="images/testimonials-picture-mobile.jpg" media="(max-width: 576px)">
+                        <img class="testimonials-section-box__foto_small" src="images/testimonials-small-bag.jpg" alt="foto-with-bag">
+                    </picture>
+                </div>
             </div> 
-    </section>
-
-      <!-- Блок Strong points-->
+        </section>
         <section class="strong-points-section" id="strong-points">
-            <div class="strong-points-section-wrap">
-                <h2 class="strong-points-section-title">Strong points</h2>
-                <div class="strong-points-content">
+            <div class="strong-points-section-box">
+                <h2 class="strong-points-section__title">Strong points</h2>
+                <div class="strong-points-section__content">
                     <picture>
                         <source srcset="images/strengths-workplace-mobile.jpg" media="(max-width: 576px)">
                         <img src="images/strengths-workplace.jpg" alt="workplace-design">
@@ -184,9 +157,9 @@
                         <source srcset="images/strengths-restplace-mobile.jpg" media="(max-width: 576px)">
                         <img src="images/strengths-restplace.jpg" alt="restplace-design">
                     </picture>
-                    <div class="strong-points-strengths">
-                        <h3 class="strong-points-strengths-title">Strengths</h3>
-                        <ul class="strengths-list">
+                    <div class="strong-points-section-list-box">
+                        <h3 class="strong-points-section-list-box__title">Strengths</h3>
+                        <ul class="strong-points-section-list">
                             <li>Interiors</li>
                             <li>Outdoors</li>
                             <li>Portraits</li>
@@ -199,8 +172,8 @@
                             <li>Nature</li>
                         </ul>
                     </div>
-                    <img class="strengths-img-only-desktop" src="images/strengths-cafe-norm.jpg" alt="cafe-design">
-                    <img class="strengths-img-only-desktop"  src="images/strengths-restplace.jpg" alt="home-design">
+                    <img class="strong-points-section__content-img_only-desktop" src="images/strengths-cafe-norm.jpg" alt="cafe-design">
+                    <img class="strong-points-section__content-img_only-desktop"  src="images/strengths-restplace.jpg" alt="home-design">
                 </div>
             </div>
         </section>
